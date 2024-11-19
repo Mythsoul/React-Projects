@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './component/navbar'
 import { createCounter } from './context/context'
 import Component1 from './component/component1'
+import Button from './component/button'
 import './App.css'
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
 
   return (
     <div className="bg-gray-100 h-screen">
-      <createCounter.Provider value={count}>
+      <createCounter.Provider value={{count , setCount}}  >
         <Navbar />
+        <Button />
         <div className="container mx-auto p-4">
           <h1 className="text-5xl font-bold">Context Api Started</h1>
           <div className="mt-8">

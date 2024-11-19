@@ -1,11 +1,11 @@
-import { createElement, useContext } from "react"
+import {  useContext } from "react"
 import { createCounter } from "../context/context"
 
 const Component1 = () => {
-  const count = useContext(createCounter)
+  const value = useContext(createCounter)
     return (
-    <div>
-        I am count {count}
+    <div className="text-center text-xl font-semibold">
+        Current count: <span className="text-blue-500">{value.count}</span>
     </div>
   )
 }
