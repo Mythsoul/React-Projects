@@ -1,13 +1,30 @@
-import { useState } from 'react'
+import { useState , useCallback } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Navbar from './componet/Navbar'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  // Function without callback 
+  const data = ()=>{ 
+    return "1"
+  } ; 
+
+  // Function with callback 
+     const demobetterdata = useCallback( ()=>{ 
+      return "2"
+     } , [])
+
+ // Function with callback and state validation kinda 
+
+ const betterdata = useCallback(()=>{ 
+  return "its" + count
+ } , [count])
 
   return (
     <>
+    <Navbar data={data()} betterdata={betterdata()} />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -33,3 +50,51 @@ function App() {
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
