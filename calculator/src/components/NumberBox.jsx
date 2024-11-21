@@ -48,7 +48,7 @@ const ModernCalculator = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-900">
       <div className="w-full max-w-md bg-gray-800 text-white rounded-lg shadow-lg p-6">
-        <h2 className="text-2xl font-bold text-center mb-4">Modern Calculator</h2>
+        <h2 className="text-2xl font-bold text-center mb-4"> Calculator : D</h2>
         <input
           type="text"
           value={display}

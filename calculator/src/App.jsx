@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div> 
-        <h1 className='text-4xl text-center'>Calculator in React : D </h1>
+        <h1 className='text-4xl text-center  bg-gray-900 text-white'>Calculator in React : D </h1>
         <div >
  
       <NumberBox /> 
