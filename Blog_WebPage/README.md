@@ -1,8 +1,12 @@
-# React + Vite
+# Blog Web Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple blog web page built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+The web page is responsive and works on all devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The web page allows the user to add, edit, and delete blog posts.
+
+The web page uses local storage to store the data.
+
+The web page is built using Vite.
+![alt text](image.png)
